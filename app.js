@@ -10,6 +10,10 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
+mongoose.connect("mongodb+srv://jobydb:joby123@cluster0.czhpkmp.mongodb.net/policeDB?retryWrites=true&w=majority",
+{useNewUrlParser:true}
+)
+
 //routing
 app.use("/api/police",policeRouter)
 

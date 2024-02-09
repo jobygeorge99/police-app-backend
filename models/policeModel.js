@@ -11,4 +11,5 @@ const policeScheme = new mongoose.Schema(
     }
 )
 
-module.exports = mongoose.model("police",policeScheme)
+module.exports = mongoose.model
+("police",policeScheme)
